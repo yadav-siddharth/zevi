@@ -1,0 +1,106 @@
+.search{
+          margin: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+
+
+.search-header{
+          font-size: 1.5rem;
+          font-weight: 600;
+          font-family: 'Popins' sans-serif;
+          gap: 10px;
+}
+
+.group {
+          display: grid;
+          line-height: 28px;
+          align-items: center;
+          position: relative;
+          width: 590px;
+}
+         
+.input {
+          width: 100%;
+          height: 40px;
+          line-height: 28px;
+          padding: 0 1rem;
+          padding-left: 2.5rem;
+          border: 2px solid #9e9ea7;
+          border-radius: 8px;
+          outline: none;
+          background-color: #FFFF;
+          color: #0d0c22;
+          transition: .3s ease;
+}
+         
+.input::placeholder {
+          color: #9e9ea7;
+          font-family: 'Popins' sans-serif;
+}
+         
+.input:focus, input:hover {
+          outline: none;
+          border-color: rgba(234,76,137,0.4);
+          background-color: #fff;
+          box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+         
+.icon {
+          position: absolute;
+          left: 1rem;
+          fill: #9e9ea7;
+          width: 1rem;
+          height: 1rem;
+}
+
+.suggestion-box {
+          background-color: #FFFF;
+          border: 1px solid #ddd;
+          margin-top: 5px;
+          max-height: 300px;
+          overflow-y: auto;
+          padding: 5px;
+          border-radius: 12px;
+}
+        
+.suggestion-box ul {
+          list-style-type: none;
+          padding: 0;
+}
+        
+.suggestion-box li {
+          cursor: pointer;
+          padding: 5px;
+}
+        
+.suggestion-box li:hover {
+          background-color: #ddd;
+}
+         
+.list-popular{
+          display: flex;
+          justify-content: space-evenly;
+}     
+
+h2{
+          display: flex;
+          align-items: center;
+          font-family: 'Popins' sans-serif;
+          font-weight: 600;
+}
+
+.list-popular span{
+          font-size: 0.8rem;
+}
+
+      
+@media screen and (max-width:640px) {
+          .group{
+                    width: 390px;
+          }
+}
+         
+         
+         

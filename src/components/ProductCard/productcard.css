@@ -1,0 +1,100 @@
+.product-image{
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          mix-blend-mode: multiply;
+}
+
+.star-icon{
+          margin-left: 210px;
+}
+
+.card {
+          position: relative;
+          width: 14.875em;
+          height: 12.5em;
+          box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+          cursor: pointer;
+          transition: all 120ms;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          padding: 0.5em;
+          padding-bottom: 3.4em;
+        }
+        
+.card::after {
+          content: "View Product";
+          padding-top: 1.25em;
+          padding-left: 1.25em;
+          position: absolute;
+          left: 0;
+          bottom: -60px;
+          background: #00AC7C;
+          color: #fff;
+          height: 2.5em;
+          width: 90%;
+          transition: all 80ms;
+          font-weight: 600;
+          text-transform: uppercase;
+          opacity: 0;
+}
+        
+.card .title {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.8rem;
+          position: absolute;
+          left: 0.625em;
+          bottom: 2.875em;
+          font-weight: 400;
+          color: #212121;
+}
+        
+.card .price {
+          font-family: Impact,'Popins' sans-serif;
+          font-weight: 700;
+          font-size: 0.9em;
+          position: absolute;
+          left: 0.625em;
+          bottom: 0.625em;
+          color: #5827d5;
+          display: flex;
+          align-items: center;
+         
+}
+        
+.card:hover::after {
+          bottom: 0;
+          opacity: 1;
+}
+        
+.card:active {
+          transform: scale(0.98);
+}
+        
+.card:active::after {
+          content: "Added !";
+          height: 3.125em;
+}
+        
+.text {
+          max-width: 55px;
+}
+        
+.image {
+          background: rgb(241, 241, 241);
+          width: 100%;
+          height: 85%;
+          display: grid;
+          place-items: center;
+}
+
+
+@media screen and (max-width:640px) {
+          .card{
+                    margin: auto;
+          }
+}
